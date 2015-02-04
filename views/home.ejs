@@ -1,0 +1,28 @@
+<% include header.html %>
+	<div class="container">
+		<header>
+			<h3>Welcome <b><a href="javascript:;"><%= user.username %></a></b> to <%= title%></h3>
+			<br>
+			<a claa="btn" href="/logout" class="text-right">退出</a>
+		</header>
+		<div class="bubble">
+			<div class="markdown-area">
+				<article class="markdown-body">
+					<h2>Simple Demos</h2>
+					<!--ul class="list">
+						<li ng-repeat="list in lists"><a href="slide/{{list.id}}">Seamless Rolling</a></li>
+						<li><a href="slide/drag-clone.html">Drag Clone</a></li>
+						<li><a href="slide/tab-switch.html">Images Tab Switch</a></li> 
+					</ul-->
+					<ul class="list">
+						<li><a href="slide/Seamless-rolling.html">Seamless Rolling</a></li>
+						<li><a href="slide/drag-clone.html">Drag Clone</a></li>
+						<li><a href="slide/tab-switch.html">Images Tab Switch</a></li> 
+					</ul>
+				</article>
+			</div>
+		</div>
+	</div>
+	<script src="/javascripts/angular.min.js"></script>
+	<script src="/plugins/index.js"></script>
+<% include footer.html %>

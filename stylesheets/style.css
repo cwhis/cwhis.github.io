@@ -1,0 +1,150 @@
+@charset 'UTF-8';
+.row{
+	margin-top: 10px;
+}
+.col-xs-4,.col-sm-3,.col-md-2{
+	margin-right: 15px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 10px;
+	background-color: #fff; 
+}
+.col-xs-7,.col-sm-8,.col-md-9{
+	padding: 0;
+	background-color: #fff; 
+	padding-bottom: 3%;
+}
+dl{
+	margin-top: 0;
+
+}
+dl>dt{
+	padding-left: 8%;
+}
+dl>dt,dl>dd>a{
+	color:#4b4b4b;
+}
+dl>dt,dl>dd{
+	height: 39px;
+	line-height: 39px;
+}
+dl>dd>a{
+	//padding:11px 35%;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	display: inline-block;
+	padding-left: 33%;
+	border-left: 2px solid #fff;
+}
+dl>dd>a,dl>dd>a:hover{
+	color: #4b4b4b;
+	text-decoration: none; 
+	border-bottom: 1px solid #f5f5f5;
+}
+dl>dd>a:hover{
+	background-color: #e4e4e4;
+	border-left: 2px solid #356ACB;
+}
+.list-icon{
+	float:right;
+	width: 18%;
+	height: 100%;
+	background-image: url("../images/icon.png");
+	background-repeat: no-repeat;
+	background-position: -49px -17px;
+	z-index: 1000;
+}
+.list-icon-arrow{
+	position: absolute;
+	right: 0;
+}
+.list-icon-alarm{
+	float: left;
+	background-position:-107px 12px; 
+}
+.list-icon-container{
+	float: left;
+	background-position: -81px 12px;
+}
+.list-icon-minus{
+	width: 22%;
+	background-position:-36px 12px; 
+}
+.list-icon-plus{
+	width: 22%;
+	background-position: 5px -41px;
+}
+dl>dd>a:hover .list-icon{
+	background-position: -49px -40px;
+}
+
+.col-xs-7>h5,.col-sm-8>h5,.col-md-9>h5{
+	padding-bottom: 1%;
+	border-bottom: 1px solid #e6e6e6;
+}
+.col-xs-7>h5>strong,.col-sm-8>h5>strong,.col-md-9>h5>strong{
+	padding-left: 2%;
+}
+.border-bold{
+	float: left;
+	height: 18px;
+	margin-top: -3px;
+	padding-right: 10px;
+	border-left: 5px solid #356ACB;
+}
+.border{
+	float: right;
+	border-bottom: 1px solid #e6e6e6;
+	height: 1px;
+	width: 91%;
+	margin-top: 6px;
+	overflow: hidden;
+}
+.check-info{
+	padding:10px 20px;
+}
+.check-info>h6{
+	margin:0;
+}
+.progress{
+	height: 5px;
+	overflow: hidden;
+	margin-bottom: 2px;
+}
+.media-body{
+	padding: 0 9%;
+}
+.media .glyphicon{
+	display: inline;
+	padding-right: 1%;
+}
+.glyphicon-play{
+	background: #ccc;
+	padding: 2px;
+	border-radius: 3px;
+}
+.control-area{
+	width: 100%;
+	background-color: #ebebeb;
+	padding-bottom: 5px;
+}
+.customs-info{
+	clear: both;
+	margin:0 3%;
+}
+.panel-heading{
+	display: inline-block;
+	margin-left: -1%;
+	padding: 1%;
+	background-color: #FFEEE3;
+	border-left: 2px solid #FFB27F;
+}
+.panel-heading>h6{
+	margin:0;
+}
+.panel-body{
+	margin-top: -2%;
+	border:1px solid #e6e6e6;
+	background-color: #f5f5f5;
+}

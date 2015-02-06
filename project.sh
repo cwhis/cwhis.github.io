@@ -1,1 +1,0 @@
-supervisor html,css,js,json,ico,ejs app.js

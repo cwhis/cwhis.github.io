@@ -1,37 +1,168 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
-  <head>
-    <title>My Tech Space</title>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel='stylesheet' href='public/stylesheets/style.css' />
-    <link rel='stylesheet' href='public/stylesheets/bootstrap-theme.min.css' />
-    <link rel='stylesheet' href='public/stylesheets/bootstrap.min.css' /> 
-	<link  rel="stylesheet"  href="public/stylesheets/style.css"  type="text/css">
-    <script src="public/javascripts/jquery.min.js"></script>
-  </head>
-  <body screen_capture_injected="true" ng-controller="myController"><div class="container">
-    <div class="row">
-      <div class="col-xs-10 col-md-10">
-        <p class="text-right"><a href="login.html">登陆</a></p>
-        <div class="bubble">
-          <div class="markdown-area">
-            <article class="markdown-body">
-              <h1>My Tech Space</h1>
-              <p>My name is Wenhua Cai,I'm a Frontend developer. This is my GitHub page that share the technologies about HTML5, CSS3, JavaScript, NodeJs and so on.Welcome to My Github Space and share your thought or give me some advices.</p><br>
-              <p>The bankend of Website use nodejs、ejs.The frontend of website use angular、bootstrap.The tools is include gulp、sublime Text2,and so on</p><br>
-              <p>Please click the login at the upper right to see more demos.<b>userName is</b> <i>admin</i>,<b>password is</b> <i>admin</i></p>
-              
-              
-            </article>
-          </div>
+<html lang="en" ng-app="app">
+    <head>
+        <title>My Tech Space</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel='stylesheet' href='stylesheets/bootstrap.min.css' />
+        <link rel='stylesheet' href='stylesheets/bootstrap-theme.min.css' />
+        <!--link rel='stylesheet' href='stylesheets/reset.css' /-->
+        <link rel='stylesheet' href='stylesheets/main.css' />
+    </head>
+    <body>
+        <div class="container" ng-controller="controller">
+            <div class="box-border">
+                <div class="row">
+                    <header>
+                        <div class="text-left col-md-6 icon-position">
+                            <div class="icon">
+                                <div class="user"></div>
+                                <div class="shoulder"></div>
+                            </div>
+                            <div class="name">
+                                <b>Rosalind</b><br>
+                                <small>wenhua.cai</small>
+                            </div>
+                        </div>
+                        <div class="text-right col-md-6">
+                            <p>Email:caiwenhua1990@163.com</p>
+                            <p>Phone:15810591887</p>
+                            <p>QQ:719045382</p>
+                        </div>
+                    </header>
+                    <div class="bottom-border"></div>
+                    <div class="main">
+                        <ul class="mode">
+                            <li>
+                                <div class="col-xs-2 col-md-2 text-left">自我介绍</div>
+                                <div class="col-xs-9 col-md-9">
+                                    <div class="col-xs-6 col-md-6">
+                                        工作经验：2 年+<br>
+                                        学历：大专  <br>
+                                        毕业学校：西安思源学院<br>
+
+                                    </div>
+                                    <div class="col-xs-6 col-md-6">
+                                        籍贯：宁夏吴忠<br>
+                                        专业：工商企业管理<br>
+                                        Github ：<a href="https://github.com/cwhis">https://github.com/cwhis</a>
+                                        
+                                    </div>
+                                </div>
+                                <img  class="col-xs-1 col-md-1 text-right personal" src="images/personal.jpg" alt="个人证件照">
+                            </li>
+                            <li>
+                                <div class="col-xs-2 col-md-2 text-left">工作经历</div>
+                                <div class="col-xs-10 col-md-10">
+                                    <div class="child-mode">
+                                        <h4>2012.6 - 2014.10 百分点科技前端实施工程师</h4>
+                                        <b>&nbsp;在百分点科技期间，担任前端实施工程师。
+                                                                       主要职责与工作有：</b>
+                                        <ol>
+                                            <li> 1. 对于各类客户页面实体数据以及其用户行为数据的处理收集。</li>
+                                            <li> 2. 对于我方与客户方的一些异步跨域问题的解决,主要实现方式为：jsonp,iframe</li>
+                                            <li> 3. 端运算数据的前端展示工作。</li>
+                                            <li> 4. 端开发人员的数据交互工作。</li>
+                                            <li> 5. 本部门的前端代码模板维护。</li>
+                                            <li> 6. 本部门的人员培训、实施流程编写以及把控。</li>
+                                            <li> 7. 在线客户的产品维护，确保客户数据的稳定性。</li>
+                                            <li> 8. 编写静态页面、CMS模板嵌套以及图片处理。</li>
+                                        </ol>
+                                    </div>
+                                    <div class="child-mode">
+                                        <h4>2014.10 - 至今 北京瑞友科技股份有限公司</h4>
+                                        <b>&nbsp;在瑞友科技期间，担任前端工程师。
+                                                                       主要职责与工作有：</b>
+                                        <ol>
+                                            <li> 1. 对客户提供的资料进行需求分析，绘制原型图。</li>
+                                            <li> 2. 简单的页面设计。</li>
+                                            <li> 3. 前端插件开发。</li>
+                                            <li> 4. 前端页面切图与交互。</li>
+                                            <li>5. 端运算数据的前端展示工作。</li>
+                                            <li> 6. 端开发人员的数据交互工作。</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-xs-2 col-md-2 text-left">项目经验</div>
+                                <div class="col-xs-10 col-md-10">
+                                    <div class="child-mode">
+                                        <h4>2014.1- 2014.4 梦芭莎个性推荐引擎项目</h4>
+                                        <b>&nbsp;责任描述：</b>
+                                        <ol>
+                                            <li> 1. 负责项目文档的编写。</li>
+                                            <li> 2. 协调项目人员的相关工作，保证项目能按照计划时间顺利进行</li>
+                                            <li> 3.项目的前端技术的实现，如：a、编写java程序调用百分点的推荐引擎接口，图片接口实现，实现客户的购物流程的数据传输b、编写javascript代码，抓取客户网站上的dom接口，实现客户商品信息的传输。c、熟练应用js拼接html,现网站推荐栏样式的呈现。</li>
+                                        </ol>
+                                        <b>&nbsp;项目描述：此项目实施过程中需要不断的开技术讨论会，以确保程序交互的稳定性和数据传输的准确性以及不间断性</b>
+                                    </div>
+                                    <div class="child-mode">
+                                        <h4>2014.4 360团购个性化推荐引擎的数据抓取</h4>
+                                        <b>&nbsp;责任描述：</b>
+                                        <ol>
+                                            <li> 1. 使用js程序抓取用户点击360团列表页面的商品，获得360团的商品信息数据和用户对360团用户点击数据。</li>
+                                            <li> 2. 向360团购数据百分点个性化推荐数据，并配合客户做数据的页面展示。</li>
+                                        </ol>
+                                    </div>
+                                    <div class="child-mode">
+                                        <h4>2013.10 -2014.1 focalprice个性化推荐栏语言翻译及货币转换</h4>
+                                        <b>&nbsp;责任描述：</b>
+                                        <ol>
+                                            <li> 1. 使用ajax实现与客户商品数据翻译接口的调用。</li>
+                                            <li> 2. 使用callback技术回调翻译后的数据在页面上的呈现。</li>
+                                            <li> 3. 检测数据在页面上展示后的稳定性。</li>
+                                        </ol>
+                                    </div>
+                                    <small>以上项目只是部分例举，主要体现js原生编写、ajax相关知识、项目文档编写能力</small>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-xs-2 col-md-2 text-left">个人能力</div>
+                                <div class="col-xs-10 col-md-10">
+                                    <ol>
+                                        <li>1. 目前主要工作为原型图至页面转化架构的实现、js模块化的实现，所以对原生JS，HTML，CSS 都较为熟悉，不过对于个人而言还是倾向于JS。</li>
+                                        <li> 2. 熟悉JS 特性，如：闭包，作用域，原型等基本知识，了解JS 设计模式，面向对象，Ajax，json，jsonp 等方面。</li>
+                                        <li>3.对于框架方面熟悉过一些，最熟悉的为jQuery，并简单研究过其源码，了解一些实现原理和方式（除jQuery框架外，还有了解angular,bootstrap框架）。</li>
+                                        <!--li> 4. 对前端性能方面，代码可维护性，可扩展性方面较有兴趣，喜欢在写代码是进一步思考一些优化等方面的东西。</li-->
+                                        <li> 5. 简单了解HTTP、HTML5、css3、nodeJs、gulp、php等前端相关知识。</li>
+                                        <li>6. 熟悉图片制作和文字工作，能够使用PhotoShop很好的切图及图片处理，并将各种图片语义化HTML+CSS+JS代码。</li>
+                                        <li>7. 精通HTML/XHTML语言，能够独立编写html、css、js 代码，并具有良好的编码结构，能够很好的解决各种浏览器兼容问题。</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-xs-2 col-md-2 text-left">自我评价</div>
+                                <div class="col-xs-10 col-md-10">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个人学习力较强，喜欢努力改善并且提升JS 性能，喜欢了解更多关于前端性能方面的技术。具有技术紧迫感，在这前端发展迅速的时代，不断学习新技术，尝试新事物。了解一些前沿技术发展，了解互联网各个公司的技术风格优点等。个性外向，喜欢团队讨论，对任务充满激情。善于与人交流沟通，具有较强的团队合作精神。在前端方面有着极大的热情和学习欲，目标成为一名专业优秀的前端开发工程师。不断努力，不断学习，不断成长。</p>
+                                    <br>
+                                    <b> 谢谢！</b>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="col-xs-2 col-md-2 text-left">个人作品</div>
+                                <div class="col-xs-10 col-md-10">
+                                    <ol>
+                                        <!--li>
+                                            <a href=""></a>
+                                        </li-->
+                                        <li>
+                                            1.<a href="https://cwhis/github.io/study/angular-express-bootstrap/index.html"> angular-express-bootstrap 搭建简单的应用框架</a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <script src="public/javascripts/angular.min.js"></script>
-  <script src="public/plugins/index.js"></script>    
-  <script src="public/javascripts/bootstrap.min.js"></script>
-  </body>
+        <script src="javascripts/jquery.min.js"></script>
+        <script src="javascripts/angular.min.js"></script>    
+        <script src="javascripts/angular-route.min.js"></script>    
+        <script src="javascripts/app.js"></script>    
+        <script src="javascripts/controller.js"></script>    
+    </body>
 </html>
 

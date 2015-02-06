@@ -1,0 +1,94 @@
+@charset 'utf-8';
+body{
+	background-color: #333;
+}
+small{
+	font-style: italic;
+}
+header{
+	padding: 4px 0px;
+	background-color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border:1px solid #ddd;
+	border-bottom:2px solid #f90;
+	overflow: hidden;
+}
+p{
+	margin:0;
+}
+.row{
+	margin-top: 10px;
+	padding: 3px;
+	background-color: #ddd;
+	border-radius: 2px;
+	
+}
+.icon-position{
+	margin-top: 5px;
+}
+.icon{
+	position: relative;
+	float: left;
+	width: 50px;
+	height: 50px;
+	background-color: #ccc;
+	box-shadow:2px 2px 3px #aaa;
+	border-radius:25px;
+}
+.name{
+	float: left;
+	padding-left: 15px;
+	margin-top: 10px;
+}
+.icon>div{
+	position: absolute;
+	background-color: #fff;
+}
+.user{
+	width: 20px;
+	height: 20px;
+	top: 12px;
+	left: 16px;
+	border-radius: 20px;
+}
+.shoulder{
+	width: 35px;
+	height: 23px;
+	top: 30px;
+	left: 9px;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px;
+}
+.main{
+	padding: 20px 0;
+	background-color: #fff;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.main .mode{
+	margin:0 30px;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+.main ul li{
+	padding: 20px 0;
+	border-bottom:1px solid #ccc;
+	font-family: "微软雅黑";
+	overflow: hidden;
+}
+.mode li .text-left{
+	color: #f90;
+	font-size: 20px;
+}
+.mode .personal{
+	margin-top:-2%;
+	padding: 0;
+}
+.mode li ol{
+}
+.mode li ol li{
+	padding: 5px 0;
+	border: none;
+}

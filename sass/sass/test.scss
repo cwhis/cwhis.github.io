@@ -1,0 +1,16 @@
+$main-color: #ce4dd6;
+$style: solid;
+
+.navbar {
+    border-bottom: {
+        color: $main-color;
+        style: $style;
+    }
+}
+
+a{
+    color: $main-color;
+    &:hover {
+        border-bottom: 1px $style;
+    }
+}

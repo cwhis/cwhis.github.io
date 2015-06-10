@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+	    <title>聚光灯闪烁</title> 
+	</head>
+	<body>
+	    <canvas width="1600" height="1000" id="canvas"></canvas>
+	    <script type="text/javascript">
+	    	(function(){
+    			var canvas = document.getElementById('canvas');
+    			var context = canvas.getContext('2d');
+	    		function Draw (canvas,rotation){
+	    			this.canvas = canvas;
+	    			this.height = canvas.height;
+	    			this.width = canvas.width;
+	    			this.rotation = rotation;
+	    			this.context = context;
+	    			this.init();
+	    		}
+	    		Draw.prototype = {
+	    			init : function (){
+	    				var that = this,ctx;
+	    				var h = 100;
+	    				var minRadius = 1;
+	    				ctx = that.context;
+	    				ctx.save();
+	    				ctx.translate(200,300);
+	    				ctx.beginPath();
+						ctx.rotate(that.rotation);
+	    				for(var i=0;i<h;i++){
+	    					//处理放射渐变
+	    					minRadius = minRadius+0.4;
+		    				var radGrad = ctx.createRadialGradient(i,i,1, i,i,minRadius);
+							radGrad.addColorStop(0, "rgba(140,22,73,0)");
+							radGrad.addColorStop(1, "rgba(255,192,171,0.3)");
+		    				var lineGrad = ctx.createLinearGradient(0,0,500,500);
+		    				lineGrad.addColorStop(0,"rgba(140,22,73,0.5)");
+		    				lineGrad.addColorStop(0.3,"rgba(255,192,171,0.5)");
+	    					this.circle(ctx,{
+	    						radius : minRadius,
+	    						radGrad : radGrad,
+	    						lineGrad : lineGrad,
+	    						x : i,
+	    						y : i
+	    					});
+	    				}
+	    				ctx.restore();
+	    				ctx.closePath();
+
+	    			},
+	    			circle : function(canvasCtx,options){
+	    				canvasCtx.beginPath();
+	    				canvasCtx.arc(options.x,options.y,options.radius,2*Math.PI,false);
+	    				canvasCtx.fillStyle = options.radGrad;
+	    				canvasCtx.strokeStyle = options.lineGrad;
+	    				canvasCtx.fill();
+	    				canvasCtx.stroke();
+	    			}
+	    		}
+	    		clearInterval(timer);
+    			var angle = 45;
+	    		var timer = window.setInterval(function(){
+	    			angle -= 15;
+					context.clearRect(0, 0, canvas.width, canvas.height);
+	    			var draw = new Draw(canvas,angle);
+	    		},500);
+	    	}())
+	    </script>
+	</body>
+</html>

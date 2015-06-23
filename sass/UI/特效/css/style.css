@@ -1,0 +1,68 @@
+﻿@charset "utf-8";
+/*公共样式*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,q,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,ins,rp,rt,ruby{margin:0;padding:0;list-style:none; outline:none;}
+body{font:12px/1.5 arial,\5b8b\4f53; font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3","\5fae\8f6f\96c5\9ed1";-webkit-font-smoothing:antialiased;color:#3c3c3c; background:#f1f1f1;}
+html{-webkit-text-size-adjust:none}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu,details, figcaption,hgroup, main,section, summary,desc,defs{display:block;padding:0; margin:0;}
+h1,h2,h3,h4,h5{font-size:100%;}
+button,input,select,textarea{font-size:100%; resize:none;font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3","\5fae\8f6f\96c5\9ed1"; box-sizing:content-box;}
+table{border-collapse:collapse;border-spacing:0;}
+img {border: 0;vertical-align: middle;}
+a{text-decoration:none;color:#3c3c3c;}
+button{ cursor:pointer;}
+a:visited{}
+a:hover{}
+a:active{}
+::selection {background-color:#690; color:#fff;}
+::-moz-selection {background-color:#690; color:#fff;}
+i{ font-family:zanba; font-style:normal; vertical-align:middle;}
+.br0{ border-right:none !important;}
+.clearfix:after{content: '';display: block;clear: both;height:0;visibility: hidden;_zoom:1;}
+.tran_nor{-webkit-transition: all 0.3s linear;-moz-transition: all 0.3s linear;-o-transition: all 0.3s linear;-ms-transition: all 0.3s linear;transition: all 0.3s linear;}
+.tran_easein{-webkit-transition: all 0.2s ease-in;-moz-transition: all 0.2s ease-in;-o-transition: all 0.2s ease-in;-ms-transition: all 0.2s ease-in;transition: all 0.2s ease-in;}
+.tran_easeinout{-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;-ms-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.tran_bezier, .tran_bezier:before, .tran_bezier:after{-webkit-transition: all 350ms cubic-bezier(0.230, 1.000, 0.320, 1.000);-moz-transition: all 350ms cubic-bezier(0.230, 1.000, 0.320, 1.000);-ms-transition: all 350ms cubic-bezier(0.230, 1.000, 0.320, 1.000);-o-transition: all 350ms cubic-bezier(0.230, 1.000, 0.320, 1.000);transition: all 350ms cubic-bezier(0.230, 1.000, 0.320, 1.000);}
+.tran_dur3{ -webkit-transition-duration:0.3s;-moz-transition-duration:0.3s;-ms-transition-duration:0.3s;-o-transition-duration:0.3s;transition-duration:0.3s;}
+.tran_dur2{ -webkit-transition-duration:0.2s;-moz-transition-duration:0.2s;-ms-transition-duration:0.2s;-o-transition-duration:0.2s;transition-duration:0.2s;}
+.tran_dur15{ -webkit-transition-duration:0.15s;-moz-transition-duration:0.15s;-ms-transition-duration:0.15s;-o-transition-duration:0.15s;transition-duration:0.15s;}
+.tran_dur6{ -webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;}
+.tran_dur7{ -webkit-transition-duration:0.7s;-moz-transition-duration:0.7s;-ms-transition-duration:0.7s;-o-transition-duration:0.7s;transition-duration:0.7s;}
+.tran_dur150{ -webkit-transition-duration:1.5s;-moz-transition-duration:1.5s;-ms-transition-duration:1.5s;-o-transition-duration:1.5s;transition-duration:1.5s;}
+.transform_rot:hover{-webkit-transform: scale(1.05) rotate(-1deg);-moz-transform: scale(1.05) rotate(-1deg);-o-transform: scale(1.05) rotate(-1deg);transform: scale(1.05) rotate(-1deg);}
+::-webkit-input-placeholder {color:#999;}
+:-moz-placeholder {color:#999;}
+::-moz-placeholder {color:#999;}
+:-ms-input-placeholder {color:#999;}
+.clear{ clear:both;}
+
+
+
+
+
+/*特效*/
+
+#task-card label {display: block;height: auto; padding-right:10px; height:25px; overflow:hidden; position:relative;color:#6c6c6c; font-family:"宋体"; padding-left:32px;}
+#task-card label a{ color:#6c6c6c;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
+#task-card button{-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
+#task-card label a:hover{ color:#ff3577;}
+[type="checkbox"] + label {position: relative;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-khtml-user-select: none;-ms-user-select: none;}
+.pull-right{ float:right;-webkit-transform:scale(0.833,0.833);-moz-transform:scale(0.833,0.833);-o-transform:scale(0.833,0.833);-ms-transform:scale(0.833,0.833);transform:scale(0.833,0.833);}
+.pull-right button{ border:none; width:30px; height:30px; border-radius:50%; margin-top:-3px;color:#6c6c6c; background:none; display:none;}
+#task-card li:hover .pull-right button{ display:block;}
+.pull-right button:hover{ background:#f2f2f2;}
+#task-card label:before {content: '';position: absolute;top:0;left:0;width: 14px;height: 14px;z-index: 0;border: 2px solid #6a6a6a;border-radius: 1px;-webkit-transition: 0.2s;-moz-transition: 0.2s;-o-transition: 0.2s;-ms-transition: 0.2s;transition: 0.2s; cursor:pointer; margin-top:3px; margin-left:3px;}
+#task-card [type="checkbox"]:checked + label:before {top: -4px;left:-3px;width:8px;height:18px;border-top: 2px solid transparent;border-left: 2px solid transparent;border-right: 2px solid #ff4081;border-bottom: 2px solid #ff4081;-webkit-transform: rotate(40deg);-moz-transform: rotate(40deg);-ms-transform: rotate(40deg);-o-transform: rotate(40deg);transform: rotate(40deg);-webkit-backface-visibility: hidden;-webkit-transform-origin: 100% 100%;-moz-transform-origin: 100% 100%;-ms-transform-origin: 100% 100%;-o-transform-origin: 100% 100%;transform-origin: 100% 100%;}
+#task-card [type="checkbox"]:not(:checked), #task-card [type="checkbox"]:checked {position: absolute;left: -9999px;visibility: hidden;}
+#task-card li{ line-height:25px; height:25px; margin-bottom:5px;}
+.have_login .answer{ float:right; width:100px; height:30px; color:#4b4b4b; background:#f5f5f5; line-height:30px; text-align:center;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); border:1px solid #e3e3e3;}
+.have_login .answer:hover{box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.08), 0 4px 5px 0 rgba(0, 0, 0, 0.09), 0 1px 10px 0 rgba(0, 0, 0, 0.08); border-color:#cecece;}
+#task-card{ margin-bottom:20px;}
+#task-card .ans{ height:30px; margin-top:20px;}
+.ask_list{ font-family:"宋体"; color:#6c6c6c;}
+.ask_list li{ line-height:28px; height:28px; overflow:hidden; padding-right:45px; position:relative;}
+.ask_list li a{ color:#6c6c6c;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
+.ask_list li a:hover{ color:#ff3577;}
+.ask_list li span{ position:absolute; right:0; top:0; color:#ff3577;}
+.ask_list li .solved{ color:#00bcd4;}
+.pd25{ padding:25px;}
+

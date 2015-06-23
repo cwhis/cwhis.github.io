@@ -8,12 +8,12 @@ var	del = require('del');
 
 //创建任务
 gulp.task('sass', function() {
-    gulp.src('sass/test.scss')
+    gulp.src('sass/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('styles'));
 });
 gulp.task('watch',function(){
-	gulp.watch('sass/test.scss', function(){
+	gulp.watch('sass/*.scss', function(){
 	    gulp.run('sass');
 	});
 })

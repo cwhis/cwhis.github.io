@@ -1,0 +1,32 @@
+
+@import "variable";
+
+.plugin-selectorOptions{
+	font-size: $fontSize-12;
+	li{
+		display: inline-block;
+		border: 1px solid $grey;
+		margin:$unit*0.2;
+		cursor: pointer;
+		max-width: $unit*10;
+		height: $unit*2.2;
+		line-height: $unit*2.2;
+		overflow: hidden;
+		padding: 0 $unit/2;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		&.selected{
+			border-color: $blue;
+			background: url(../scripts/plugins/selector/selected.png) right bottom no-repeat;	
+		}
+	}
+	.selectall{
+		position: absolute;
+		width: $unit*5;
+		line-height: $unit*3;
+		color:$blue;
+		cursor: pointer;
+		text-align:center;	
+	}
+}
+

@@ -1,0 +1,30 @@
+/*color */
+/*font*/
+.clearfix {
+  zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+.plugin-CheckOptions {
+  font-size: 12px; }
+  .plugin-CheckOptions li {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+    cursor: pointer;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .plugin-CheckOptions li i {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 1px solid #c9c9c9;
+      vertical-align: middle;
+      margin-right: 5px; }
+    .plugin-CheckOptions li.checked i {
+      border-color: #2196f3;
+      background: #2196f3 url(../scripts/plugins/checkbox/checked.png) center center no-repeat; }

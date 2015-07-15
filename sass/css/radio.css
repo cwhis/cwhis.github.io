@@ -1,0 +1,47 @@
+/*color */
+/*font*/
+.clearfix {
+  zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+.plugin-radioOptions {
+  font-size: 12px; }
+  .plugin-radioOptions li {
+    display: inline-block;
+    cursor: pointer;
+    max-width: 100px;
+    overflow: hidden;
+    padding: 5px 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 60px; }
+    .plugin-radioOptions li span {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 1px solid #666;
+      -moz-border-radius: 7px;
+      -webkit-border-radius: 7px;
+      border-radius: 7px;
+      position: relative;
+      vertical-align: -4px;
+      margin-right: 5px; }
+    .plugin-radioOptions li i {
+      width: 10px;
+      height: 10px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      background-color: #3c87bc;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      display: none; }
+    .plugin-radioOptions li.active span {
+      border-color: #2196f3; }
+    .plugin-radioOptions li.active i {
+      display: inline-block; }

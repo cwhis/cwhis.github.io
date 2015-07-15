@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/checkbox.css" rel="stylesheet">
+       <link rel="shortcut icon" href="../../favicon.ico" type="images-icon">
+</head>
+<body>
+   <div id="checkContainer" style="border:1px solid #f00;width:1000px;margin:30px auto;"></div>
+   <script src="../scripts/jquery-2.1.3.min.js"></script>
+   <script src="../scripts/plugins/checkbox/checkbox.js"></script>
+   <script>
+   	
+   	$.checkbox({
+   		container: $('#checkContainer'),
+   		data: [{text: '添加',value:'1111'},{text: '编辑',value:'删除'}],
+         /*max: 3,
+         isNeedSelectAll: false,*/
+   		afterCheck: function(data,eleData){
+   			console.log('选中：');
+   			console.log(data);
+   			console.log('当前选中：');
+   			console.log(eleData);
+   		},
+   		cancelCheck: function(data,eleData){
+   			console.log('选中：');
+   			console.log(data);
+   			console.log('当前取消：');
+   			console.log(eleData);
+   		}
+   	});
+   </script>
+</body>
+</html>

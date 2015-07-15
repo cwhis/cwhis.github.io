@@ -1,0 +1,46 @@
+
+@charset "UTF-8";
+@import "variable";
+
+
+.plugin-radioOptions{
+	font-size:$fontSize-12;
+	li{
+		display: inline-block;
+		cursor: pointer;
+		max-width: 100px;
+		overflow: hidden;
+		padding: 5px 8px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		min-width: 60px;
+		span{
+			display: inline-block;
+			width: 14px;
+			height:14px;
+			border:1px solid #666;
+			@include rounded-corners(7px);
+			position: relative;
+			vertical-align:-4px;
+			margin-right: 5px;
+		}
+		i{
+			width: 10px;
+			height:10px;
+			@include rounded-corners(5px);
+			background-color:#3c87bc;
+			position: absolute;
+			left:2px;
+			top: 2px;
+			display: none;
+		}
+		&.active{
+			span{
+				border-color: $blue;	
+			}
+			i{
+				display: inline-block;	
+			}
+		}
+	}
+}

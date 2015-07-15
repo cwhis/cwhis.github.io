@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import "variable";
+.plugin-dropdownlist{
+	font-size:$fontSize-12;
+	border:1px solid $grey;
+	position: relative;
+	&.plugin-disable{
+		background: $greyLighten-2;
+		&:hover{
+			.arrow{
+			    border-color: $greyLighten-1 transparent transparent transparent;
+			    margin-top: -3px;
+			}
+		}	
+	}
+	label{
+		text-indent:10px; 
+		display:block;
+		width: 80%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		cursor: pointer;	
+	}
+	.arrow{
+		position: absolute;
+		line-height: 0;
+		font-size: 0;
+		right: 5px;
+		top: 50%;
+	    border-color: $greyLighten-1 transparent transparent transparent;
+	    margin-top: -3px;
+	    border-style: solid;
+	    border-width: 5px;		
+		cursor: pointer;
+		transition: all .2s;
+		-moz-transition: all .2s;
+		-webkit-transition: all .2s;
+		-o-transition: all .2s;
+		&.hover{
+			border-color:  transparent transparent $blue transparent;	
+			margin-top: -8px;
+		}
+	}
+	ul{
+		max-height:120px;
+		border:1px solid #cad1d7;
+		position: absolute;
+		left: -1px;
+		width: 100%; 
+		display:none;
+		padding-bottom:10px;
+		z-index: 110;
+		background: #fff; 
+		overflow-y:auto;
+		li{
+			height: $unit*2;
+			line-height: $unit*2;
+			text-indent:$unit/2;
+			cursor: pointer;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			&:hover,&.active{
+				background-color:$blueLighten-5;
+			}
+		}
+		&.cols2{
+			width: 200%;
+			li{
+				float: left;
+				width: 48%;
+				&:nth-child(even){float:right;}
+			}
+		}
+	}	
+}

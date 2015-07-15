@@ -10,7 +10,7 @@ var	del = require('del');
 gulp.task('sass', function() {
     gulp.src('sass/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('styles'));
+        .pipe(gulp.dest('css'));
 });
 gulp.task('watch',function(){
 	gulp.watch('sass/*.scss', function(){

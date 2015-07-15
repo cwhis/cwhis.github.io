@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import "variable";
+
+.plugin-CheckOptions{
+	font-size: $fontSize-12;
+	li{
+		display: inline-block;
+		margin:$unit/2 $unit $unit/2 0;
+		cursor: pointer;
+		max-width: $unit*10;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		i{
+			display: inline-block;
+			width: $unit*1.4;
+			height: $unit*1.4;
+			border:1px solid $grey;
+			vertical-align: middle;
+			margin-right: $unit/2;
+		}
+		&.checked{
+			i{
+				border-color: $blue;
+				background: $blue url(../scripts/plugins/checkbox/checked.png) center center no-repeat;
+			}
+		}		
+	}		
+}
+
+

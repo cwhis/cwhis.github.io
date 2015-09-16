@@ -1,0 +1,37 @@
+@charset 'utf-8';
+@import "reset.scss";
+@charset 'utf-8';
+.imgSwitch{
+	display: inline-block;
+	width:635px;
+	margin: 20px;
+	border:1px solid #ccc;
+	padding: 10px;
+	.hiddenWrap{
+		float: left;
+		overflow: hidden;
+		img{
+			width: 500px;
+			height: 463px;
+			border:1px solid #ccc;
+		}
+	}
+	ul{
+		float: left;
+		margin-left: 10px;
+		li{
+			img{
+				width: 120px;
+				height: 72px;
+				border: 1px solid #ccc;
+			}
+
+		}
+		li.cur{
+			img{
+				border:1px solid #00ffff;
+				opacity: 0.5;
+			}
+		}
+	}
+}

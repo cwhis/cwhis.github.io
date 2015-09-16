@@ -1,0 +1,61 @@
+@charset 'utf-8';
+@import "reset.scss";
+@charset 'utf-8';
+.imgSwitch{
+	position: relative;
+	margin: 20px;
+	width: 795px;
+	overflow: hidden;
+	.hiddenWrap{
+		position: relative;
+		width: 793px;
+		height: 130px;
+		overflow: hidden;
+		border:1px solid #ccc;
+		z-index: 1;
+
+		.btn{
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background: #333;
+			opacity: 0.5;
+			font-size: 28px;
+			line-height: 20px;
+			cursor: pointer;
+			text-align:center;
+			color:#fff;
+			z-index: 2;
+		}
+		.rightBtn{
+			right: -2px;
+			top: 50px;
+		}
+		.leftBtn{
+			left: -2px;
+			top: 50px;
+		}
+		img{
+			width: 500px;
+			height: 463px;
+			border:1px solid #ccc;
+		}
+		ul{
+			position: absolute;
+			float: left;
+			height: 130px;
+			li{
+				float: left;
+				padding: 5px;
+				a{
+					overflow: hidden;
+					img{
+						width: 120px;
+						height: 120px;
+					}
+				}
+
+			}
+		}
+	}
+}

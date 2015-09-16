@@ -1,0 +1,92 @@
+/*color */
+/*font*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*# sourceMappingURL=reset.css.map */
+.imgSwitch {
+  position: relative;
+  margin: 20px;
+  width: 795px;
+  overflow: hidden; }
+  .imgSwitch .hiddenWrap {
+    position: relative;
+    width: 793px;
+    height: 130px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    z-index: 1; }
+    .imgSwitch .hiddenWrap .btn {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #333;
+      opacity: 0.5;
+      font-size: 28px;
+      line-height: 20px;
+      cursor: pointer;
+      text-align: center;
+      color: #fff;
+      z-index: 2; }
+    .imgSwitch .hiddenWrap .rightBtn {
+      right: -2px;
+      top: 50px; }
+    .imgSwitch .hiddenWrap .leftBtn {
+      left: -2px;
+      top: 50px; }
+    .imgSwitch .hiddenWrap img {
+      width: 500px;
+      height: 463px;
+      border: 1px solid #ccc; }
+    .imgSwitch .hiddenWrap ul {
+      position: absolute;
+      float: left;
+      height: 130px; }
+      .imgSwitch .hiddenWrap ul li {
+        float: left;
+        padding: 5px; }
+        .imgSwitch .hiddenWrap ul li a {
+          overflow: hidden; }
+          .imgSwitch .hiddenWrap ul li a img {
+            width: 120px;
+            height: 120px; }

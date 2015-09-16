@@ -1,0 +1,33 @@
+@charset 'utf-8';
+@import "reset.scss";
+@charset 'utf-8';
+.imgSwitch{
+	position: relative;
+	margin: 20px;
+	width: 785px;
+	overflow: hidden;
+	.hiddenWrap{
+		position: relative;
+		width: 782px;
+		height: 130px;
+		overflow: hidden;
+		border:1px solid #ccc;
+		z-index: 1;
+		ul{
+			position: absolute;
+			float: left;
+			height: 130px;
+			li{
+				float: left;
+				padding: 5px;
+				a{
+					overflow: hidden;
+					img{
+						width: 120px;
+						height: 120px;
+					}
+				}
+			}
+		}
+	}
+}

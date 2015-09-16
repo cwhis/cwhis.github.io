@@ -1,12 +1,19 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Example</title>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>欢迎学习php!</title>
     </head>
-    <body>
+	<body>
+    <?php 
+     $maxLine = 4; 
+     $no = 17;
+    $line = ceil($no/$maxLine);
+     
+    $row = $no%$maxLine;
+    
 
-        <?php
-        echo "Hi, I'm a PHP script!";
-        ?>
-
-    </body>
+     echo $line.$row;
+    ?>
+	</body>
 </html>
